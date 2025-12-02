@@ -1,0 +1,11 @@
+# CNAME File for Custom Domain
+#
+# If you want to use a custom domain (e.g., www.abhishekkarna.com):
+# 1. Rename this file from "CNAME.example" to "CNAME" (no file extension)
+# 2. Replace the text below with your custom domain
+# 3. Configure your domain's DNS settings to point to GitHub Pages
+#
+# Instructions: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
+
+# Uncomment and replace with your domain:
+# www.yourdomain.com
