@@ -24,7 +24,7 @@
                 <li><a href="research.html" class="active">Research</a></li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="presentations.html">Presentations</a></li>
-                <li><a href="cv.html">CV</a></li>
+                <li><a href="resume.pdf" target="_blank">CV</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
@@ -32,65 +32,47 @@
 
     <section class="page-header">
         <div class="container">
-            <h1>Research Experience</h1>
-            <p>Exploring quantum phenomena, materials synthesis, and atmospheric physics</p>
+            <h1>Research</h1>
+            <p>Quantum spin systems, materials synthesis, and atmospheric physics</p>
         </div>
     </section>
 
     <section class="research-detail" id="quantum-spin">
         <div class="container">
             <div class="research-header">
-                <h2>Frustrated Quantum Spin Systems</h2>
+                <h2>A New Quantum Monte Carlo for Generic Lattice Hamiltonians</h2>
                 <div class="research-meta">
                     <span><i class="fas fa-university"></i> Duke University</span>
-                    <span><i class="fas fa-user"></i> Supervisor: Prof. Shailesh Chandrasekharan</span>
-                    <span><i class="fas fa-calendar"></i> May 2024 - Present</span>
+                    <span><i class="fas fa-user"></i> Prof. Shailesh Chandrasekharan</span>
+                    <span><i class="fas fa-calendar"></i> May 2024 – Present</span>
                 </div>
             </div>
 
             <div class="research-content">
-                <h3>Overview: The Sign Problem and PDMS</h3>
                 <p>
-                    Quantum Monte Carlo methods are powerful tools for studying quantum many-body systems, but frustrated models—systems with competing correlations that prevent simultaneous minimization of local interactions—generically suffer from the notorious "sign problem," where cancellations of positive and negative weights prevent reliable sampling. The general form of the sign problem is NP-hard. Even in systems where ground-state calculations are possible, obtaining excited states stably remains challenging.
+                    Quantum Monte Carlo methods are among the most powerful tools for studying quantum many-body systems, but frustrated models generically suffer from the sign problem, an NP-hard obstruction to reliable sampling arising from cancellations of positive and negative weights. Even where the ground state is accessible, obtaining excited states reliably remains an open challenge.
                 </p>
                 <p>
-                    I developed a new Monte Carlo approach for numerical spectroscopy of generic lattice Hamiltonians, called the Projected Density Matrix Sampling (PDMS) method. By providing smooth and rapid convergence, PDMS accesses the excited spectrum easily in sign-free systems and remains fully robust at low temperatures in systems with sign problems. Instead of tracing the thermal density matrix ρ = e<sup>-βH</sup> over the full Hilbert space, PDMS judiciously samples in a much smaller projection subspace while maintaining ergodicity and detailed balance, still obtaining the correct answer. This work led to a first-author paper, now available on arXiv.
+                    Working with Prof. Chandrasekharan, I developed the Projected Density Matrix Sampling (PDMS) method: a continuous-time path-integral Monte Carlo approach for computing low-lying spectra of generic lattice Hamiltonians. Rather than tracing the full thermal density matrix, PDMS samples within a carefully chosen projection subspace while maintaining ergodicity and detailed balance. The method achieves rapid convergence in sign-free systems and yields spectral information even in the presence of sign problems. We applied it to the Shastry–Sutherland model and to the 1D Transverse Field Ising Model near the E₈ critical point, obtaining scaling relations and low-lying energies previously inaccessible to Monte Carlo. Results are in a first-author paper currently under review at <em>Physical Review D</em>.
                 </p>
 
-                <h3>Theoretical Work</h3>
-                <ul class="research-list">
-                    <li>Analyzed the established ground state derivation for certain parameter ranges of the Shastry-Sutherland model (SSM), a geometrically frustrated 2D Heisenberg anti-ferromagnet</li>
-                    <li>Applied theory of angular momentum and addition of spins to a 16-spin lattice to perform dimensionality reduction from 2<sup>16</sup> to 12,870 states for numerical ground state search in any parameter range</li>
-                    <li>Formulated symmetry arguments to calculate total spin <em>s</em> for each energy state to recover the complete 2<sup>16</sup> states</li>
-                    <li>Performed trotterization of the Boltzmann factor in the partition function for Quantum Monte Carlo (QMC)</li>
-                    <li>Mapped energy search problem as a sampling problem through path integral formulation of quantum mechanics</li>
-                    <li>Performed analytical calculations following ergodicity rules and detailed balance principle from stochastic process theory to understand constraints on the SSM Hamiltonian for algorithm development</li>
-                </ul>
-
-                <h3>Numerical Modeling and Results</h3>
-                <ul class="research-list">
-                    <li>Devised first-principles framework for Exact Diagonalization (ED) on 16-spin lattice SSM Hamiltonian</li>
-                    <li>Performed ground state search for different coupling ratios and calculated S² matrices and total spin through diagonalization of all irreducible representations</li>
-                    <li>Developed the new Projected Density Matrix Sampling (PDMS) method and solved 2-, 3-, 4-, 16-, 64-, and 96-site systems accurately</li>
-                    <li>In the quantum Heisenberg limit (frustration removed), demonstrated very rapid convergence to obtain lowest-few eigenenergies</li>
-                    <li>In frustrated regimes, showed complete agreement within errors with exact diagonalization results on small lattices</li>
-                    <li>With collaborators at Penn State, applied PDMS to the sign-free 1D-critical Transverse Field Ising Model (TFIM) with longitudinal field, demonstrating the flow from the conformal limit to the massive E₈ quantum field theory by obtaining scaling relations and energies previously inaccessible to Monte Carlo methods</li>
-                    <li>Presented results at the International Conference on Strongly Correlated Quantum Materials (ICSCQM 2025) in Hvar, Croatia, where discussions inspired experiment-informed projection strategies now being incorporated into the PDMS framework</li>
-                    <li>Currently investigating algebraic lattice symmetries, "sign problem" in new projection subspaces, and multi-level ergodic sampling to improve the method's applicability</li>
-                </ul>
+                <h3 class="research-subheading">Current Work</h3>
+                <p>
+                    I am currently designing a second-generation PDMS algorithm for the Shastry–Sutherland model incorporating two targeted changes: (i) replacing the conventional S<sub>z</sub> basis with the orthogonal-dimer basis, which is better adapted to the model's frustrated geometry, and (ii) using physically motivated projection subspaces designed to capture the distinct phases of the SSM phase diagram.
+                </p>
 
                 <div class="research-links">
                     <a href="https://arxiv.org/abs/2511.19209" target="_blank" class="btn btn-small">
                         <i class="fas fa-file-alt"></i> arXiv Paper
                     </a>
-                    <a href="https://drive.google.com/file/d/1beXm53wRI3yXeGhHXWUN8-guY60ea-Zz/view?usp=sharing" target="_blank" class="btn btn-small">
-                        <i class="fas fa-presentation"></i> Presentation (ED)
-                    </a>
                     <a href="https://drive.google.com/file/d/12v72ZTBUIN_75lA6e1gP0xlQUEPTSb1B/view?usp=sharing" target="_blank" class="btn btn-small">
-                        <i class="fas fa-file-pdf"></i> Poster 1
+                        <i class="fas fa-file-pdf"></i> Poster (ICSCQM 2025)
                     </a>
                     <a href="https://drive.google.com/file/d/1_Y61qJXp79gWbo2lJYBWalwq9FMnr7-t/view?usp=drive_link" target="_blank" class="btn btn-small">
-                        <i class="fas fa-file-pdf"></i> Poster 2
+                        <i class="fas fa-file-pdf"></i> Poster (APS 2026)
+                    </a>
+                    <a href="pdms-presentation.pdf" target="_blank" class="btn btn-small">
+                        <i class="fas fa-file-pdf"></i> Talk (Max Planck GCCQM, Feb 2026)
                     </a>
                 </div>
             </div>
@@ -103,44 +85,25 @@
                 <h2>Quantum Materials Synthesis and Characterization</h2>
                 <div class="research-meta">
                     <span><i class="fas fa-university"></i> Duke University</span>
-                    <span><i class="fas fa-user"></i> Supervisor: Prof. Sara Haravifard</span>
-                    <span><i class="fas fa-calendar"></i> Aug 2022 - Present</span>
+                    <span><i class="fas fa-user"></i> Prof. Sara Haravifard</span>
+                    <span><i class="fas fa-calendar"></i> Aug 2022 – Present</span>
                 </div>
             </div>
 
             <div class="research-content">
-                <h3>Synthesis Techniques</h3>
-                <ul class="research-list">
-                    <li>Conducted <strong>solid-state synthesis</strong> for different concentrations of:
-                        <ul>
-                            <li>Cr-doped ZnAl₂O₄</li>
-                            <li>Lithium-doped ZnV₂O₄ (spinel compounds)</li>
-                            <li>NdFeO₃ (topological magnon candidate)</li>
-                        </ul>
-                    </li>
-                    <li>Performed <strong>arc melting method</strong> for TmB₄ and HoB₄ (metallic SSM altermagnet candidates)</li>
-                    <li>Synthesized single crystals of NdFeO₃ using <strong>optical floating zone</strong> technique</li>
-                </ul>
-
-                <h3>X-ray Diffraction, Laue Scattering, and PPMS</h3>
-                <ul class="research-list">
-                    <li>Executed high-resolution <strong>X-ray diffraction</strong> with Rietveld refinement using FullProf Suite and Origin</li>
-                    <li>Interpreted CIF and PCR files for obtaining lattice parameters for structural characterization</li>
-                    <li>Performed phase identification for purity checks</li>
-                    <li>Investigated <strong>Vegard's law</strong> for structural deviations in spinel doping experiments</li>
-                    <li>Conducted <strong>Laue scattering</strong> on single crystals for orientation alignment</li>
-                    <li>Performed magnetometric measurements using <strong>Quantum Design PPMS</strong></li>
-                </ul>
+                <p>
+                    I joined the Haravifard Lab in my first year to work on frustrated quantum materials. For spinel compounds (Cr-doped ZnAl₂O₄ and Li-doped ZnV₂O₄), I synthesized phase-pure samples via solid-state techniques and used high-resolution XRD with Rietveld refinement in FullProf to determine lattice parameters across dopings and quantify deviations from Vegard's law. I also performed arc melting on TmB₄ and HoB₄, metallic altermagnet candidates related to the Shastry–Sutherland lattice.
+                </p>
+                <p>
+                    For perovskites, I synthesized phase-pure NdFeO₃, a theoretical topological magnon candidate, and grew a single crystal using the optical floating zone furnace. I performed Laue scattering for orientation alignment and PPMS measurements to obtain temperature-dependent magnetization and hysteresis curves. Preliminary results were presented at APS 2025; the crystal is currently being re-grown for inelastic neutron scattering studies.
+                </p>
 
                 <div class="research-links">
                     <a href="https://drive.google.com/file/d/17I0clrem0eL-AkAyn5olomszOddt-ud4/view?usp=sharing" target="_blank" class="btn btn-small">
-                        <i class="fas fa-file-pdf"></i> Research Poster 1
+                        <i class="fas fa-file-pdf"></i> Poster (APS 2025)
                     </a>
                     <a href="https://drive.google.com/file/d/1Q5lYANvd6rFoBXiDH5eYXa6Fub0bb629/view?usp=drive_link" target="_blank" class="btn btn-small">
-                        <i class="fas fa-file-pdf"></i> Poster 2
-                    </a>
-                    <a href="https://drive.google.com/file/d/1lM-2N0D21gD-QNmlPJ4ic_jak5Xj_B7n/view?usp=drive_link" target="_blank" class="btn btn-small">
-                        <i class="fas fa-file-pdf"></i> Poster 3
+                        <i class="fas fa-file-pdf"></i> Poster (Duke 2024)
                     </a>
                 </div>
             </div>
@@ -153,39 +116,22 @@
                 <h2>Atmospheric Pollution and Climate Physics</h2>
                 <div class="research-meta">
                     <span><i class="fas fa-university"></i> Duke University</span>
-                    <span><i class="fas fa-user"></i> Supervisor: Prof. Brian G. McAdoo</span>
-                    <span><i class="fas fa-calendar"></i> Nov 2022 - Present</span>
+                    <span><i class="fas fa-user"></i> Prof. Brian G. McAdoo</span>
+                    <span><i class="fas fa-calendar"></i> Nov 2022 – Present</span>
                 </div>
             </div>
 
             <div class="research-content">
-                <h3>PM<sub>2.5</sub> Modeling and Synoptic-scale Dynamics</h3>
-                <ul class="research-list">
-                    <li>Applied <strong>air parcel backtrajectory modeling (HYSPLIT)</strong> for transboundary pollution analysis</li>
-                    <li>Conducted <strong>aerosol optical depth (AOD)</strong> analysis</li>
-                    <li>Implemented <strong>potential source contribution functions (PSCF)</strong> integrating meteorological and on-site pollution data</li>
-                    <li>Modeled transboundary PM₂.₅ movement in Nepal and the Indo-Gangetic Plain (IGP) region</li>
-                    <li>Identified pollutant transport pathways and cross-border influence patterns</li>
-                </ul>
-
-                <h3>Local Pollution Dynamics</h3>
-                <ul class="research-list">
-                    <li>Examined diurnal PM₂.₅ patterns</li>
-                    <li>Analyzed <strong>planetary boundary layer height (PBLH)</strong></li>
-                    <li>Calculated <strong>ventilation coefficients (VC)</strong> to isolate local vs. non-local pollution sources</li>
-                    <li>Applied moving average subtraction method for non-local effect quantification</li>
-                </ul>
-
-                <h3>Meteorological Analysis</h3>
-                <ul class="research-list">
-                    <li>Assisted in international field work projects by PhD students in the group</li>
-                    <li>Created heatwave maps for Southeastern United States</li>
-                    <li>Currently developing Bayesian Networks method for Systems Dynamics-type analysis of climate-health questions</li>
-                </ul>
+                <p>
+                    Working with Prof. McAdoo's group, I modeled transboundary PM₂.₅ dynamics in Nepal and the Indo-Gangetic Plain using HYSPLIT back-trajectory analysis, aerosol optical depth (AOD), and potential source contribution functions (PSCF). On the local scale, I examined diurnal PM₂.₅ patterns, planetary boundary layer height (PBLH), and ventilation coefficients to isolate local and non-local pollution sources. This work contributed to a co-first-author paper now published in <em>Atmospheric Pollution Research</em>.
+                </p>
 
                 <div class="research-links">
+                    <a href="https://doi.org/10.1016/j.apr.2026.102920" target="_blank" class="btn btn-small">
+                        <i class="fas fa-file-alt"></i> Published Paper
+                    </a>
                     <a href="https://drive.google.com/file/d/1ZmYeDERiSeS0sn5zUPi325O8c5r5wCAV/view?usp=drive_link" target="_blank" class="btn btn-small">
-                        <i class="fas fa-presentation"></i> Research Presentation
+                        <i class="fas fa-file-pdf"></i> Presentation
                     </a>
                 </div>
             </div>
@@ -198,19 +144,15 @@
                 <h2>Collider Physics for HL-LHC Upgrade</h2>
                 <div class="research-meta">
                     <span><i class="fas fa-university"></i> Duke University</span>
-                    <span><i class="fas fa-user"></i> Supervisor: Prof. Ashutosh Kotwal</span>
-                    <span><i class="fas fa-calendar"></i> Apr 2023 - Aug 2023</span>
+                    <span><i class="fas fa-user"></i> Prof. Ashutosh Kotwal</span>
+                    <span><i class="fas fa-calendar"></i> Apr 2023 – Aug 2023</span>
                 </div>
             </div>
 
             <div class="research-content">
-                <h3>Algorithm Development</h3>
-                <ul class="research-list">
-                    <li><strong>Wedge Generation Algorithm:</strong> Designed and implemented an algorithm to segment transverse and longitudinal sections of concentric collider detectors into wedges for detecting dark matter particle candidates as per SUSY theory</li>
-                    <li><strong>Spacepoint Divider Algorithm:</strong> Devised an algorithm that processes HL-LHC collision spacepoint data and divides them into geometrically generated wedges</li>
-                    <li>Enabled parallelized silicon-based track trigger particle track reconstruction for theorized metastable particles</li>
-                    <li>Achieved extremely fast computational speeds for real-time particle tracking</li>
-                </ul>
+                <p>
+                    As a Huang Fellow (2023), I designed track reconstruction algorithms for the HL-LHC upgrade with Prof. Kotwal's group. I implemented a wedge generation algorithm that segments the transverse and longitudinal sections of concentric silicon detectors, and a spacepoint divider that assigns collision data to those wedges, enabling parallelized, real-time silicon track-trigger reconstruction for theorized metastable dark matter candidates. Contributions were acknowledged in a published paper in <em>Scientific Reports</em>.
+                </p>
 
                 <div class="research-links">
                     <a href="https://drive.google.com/file/d/1LZcLsM5f-6GdxR5StXC2eNSGi0xMpccX/view?usp=sharing" target="_blank" class="btn btn-small">
@@ -224,94 +166,13 @@
         </div>
     </section>
 
-    <section class="research-detail" id="nanotechnology">
-        <div class="container">
-            <div class="research-header">
-                <h2>Nanotechnology Research</h2>
-                <div class="research-meta">
-                    <span><i class="fas fa-university"></i> Tribhuvan University, Nepal</span>
-                    <span><i class="fas fa-user"></i> Supervisor: Prof. Rameshwar Adhikari</span>
-                    <span><i class="fas fa-calendar"></i> Nov 2021 - Aug 2022</span>
-                </div>
-            </div>
-
-            <div class="research-content">
-                <h3>Experimental Work</h3>
-                <ul class="research-list">
-                    <li>Prepared thin-oil films for spectroscopic analysis</li>
-                    <li>Conducted <strong>UV-Visible Spectroscopy</strong> using Shimadzu UV-Vis 1900i Spectrophotometer</li>
-                    <li>Generated smoothed continuous spectrum plots using OriginPro 2016</li>
-                    <li>Performed post-experimental data analysis and visualization</li>
-                </ul>
-
-                <div class="research-links">
-                    <a href="https://drive.google.com/file/d/1srqtpPKYotui8j33H3_AgV9B-gvotHKo/view?usp=sharing" target="_blank" class="btn btn-small">
-                        <i class="fas fa-file-pdf"></i> View Report
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="skills-section">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-microscope"></i> Research Methods</h3>
-                    <ul>
-                        <li>Numerical modeling of Hamiltonians</li>
-                        <li>Quantum Monte Carlo</li>
-                        <li>Exact Diagonalization</li>
-                        <li>X-ray Diffraction</li>
-                        <li>Laue Scattering</li>
-                        <li>Single Crystal Growth</li>
-                        <li>Climate Data Modeling</li>
-                        <li>HYSPLIT Trajectory Analysis</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Software & Tools</h3>
-                    <ul>
-                        <li>Python (numpy, scipy, pandas, etc.)</li>
-                        <li>HPC Cluster</li>
-                        <li>Version control</li>
-                        <li>AI Models</li>
-                        <li>LaTeX</li>
-                        <li>OriginPro</li>
-                        <li>FullProf</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-graduation-cap"></i> Selected Courses</h3>
-                    <ul>
-                        <li>Quantum Mechanics I & II</li>
-                        <li>Representation Theory*</li>
-                        <li>Quantum Lattice Monte Carlo</li>
-                        <li>Frustrated Quantum Spin System</li>
-                        <li>Quantum Materials I & II</li>
-                        <li>Novel Quantum Magnets I & II</li>
-                        <li>Complex Analysis</li>
-                        <li>General Relativity*</li>
-                        <li>Algebraic Structures I*</li>
-                        <li>Real Analysis*</li>
-                        <li>Differential Geometry</li>
-                    </ul>
-                    <p class="note">*Graduate course</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Abhishek Karna. All rights reserved.</p>
+                <p>&copy; 2026 Abhishek Karna. All rights reserved.</p>
                 <div class="footer-links">
                     <a href="https://www.linkedin.com/in/abhishekkarna/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:abhishek.karna@duke.edu"><i class="fas fa-envelope"></i></a>
+                    <a href="mailto:kronos.karna@gmail.com"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </div>
