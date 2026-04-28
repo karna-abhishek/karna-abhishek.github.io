@@ -1,0 +1,80 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// Add essays here as they are written.
+// Each entry: { title, date, tag, description, file }
+// file should be a path under /essays/ in the public folder.
+// To publish an essay: add an entry here and drop the PDF into public/essays/
+// Remove the `coming_soon` field once the PDF is ready.
+const essays: {
+  title: string;
+  date: string;
+  tag: 'PPE' | 'Philosophy' | 'Physics' | 'Culture';
+  description: string;
+  file?: string;
+  coming_soon?: boolean;
+}[] = [
+  {
+    title: "On the Unreasonable Effectiveness of Mathematics",
+    date: "Forthcoming",
+    tag: "Physics",
+    description: "Why do abstract mathematical structures invented for their own sake keep reappearing, unchanged, in the fundamental laws of nature?",
+    coming_soon: true,
+  },
+  {
+    title: "The Epistemology of Models",
+    date: "Forthcoming",
+    tag: "Philosophy",
+    description: "What does it mean for a model to be true? A look at representation, idealization, and the strange success of fiction in science.",
+    coming_soon: true,
+  },
+  {
+    title: "Markets, Morality, and Mechanism Design",
+    date: "Forthcoming",
+    tag: "PPE",
+    description: "When should we let markets allocate things, and when is that a moral failure? Drawing on Sandel, Roth, and the theory of matching.",
+    coming_soon: true,
+  },
+];
+---
+
+<Layout title="Essays" active="Essays" description="Essays on philosophy, politics, economics, and physics by Abhishek Karna">
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Essays</h1>
+      <p>On philosophy, politics, economics, physics, and the intersections between them</p>
+    </div>
+  </section>
+
+  <section class="essays-section">
+    <div class="container">
+
+      <ul class="essay-list">
+        {essays.map(essay => (
+          <li class={`essay-item${essay.coming_soon ? ' essay-coming-soon' : ''}`}>
+            <div>
+              <div class="essay-meta">
+                <span>{essay.date}</span>
+                <span class="essay-tag">{essay.tag}</span>
+              </div>
+              <p class="essay-title">{essay.title}</p>
+              <p class="essay-desc">{essay.description}</p>
+            </div>
+            {essay.coming_soon ? (
+              <span class="btn" style="white-space: nowrap; align-self: center; opacity: 0.4; cursor: default; pointer-events: none;">
+                <i class="fas fa-clock"></i> Soon
+              </span>
+            ) : (
+              <a href={essay.file} target="_blank" class="btn" style="white-space: nowrap; align-self: center;">
+                <i class="fas fa-file-pdf"></i> PDF
+              </a>
+            )}
+          </li>
+        ))}
+      </ul>
+
+    </div>
+  </section>
+
+</Layout>
