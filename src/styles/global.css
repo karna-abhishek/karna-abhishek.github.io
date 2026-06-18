@@ -185,11 +185,11 @@ nav {
    HERO
    ============================================ */
 .hero {
-  padding: 5rem 2rem 4.5rem;
+  padding: 4rem 2rem;
   border-bottom: 1px solid var(--border);
   position: relative;
   overflow: hidden;
-  min-height: 420px;
+  min-height: 520px;
   display: flex;
   align-items: center;
 }
@@ -213,10 +213,12 @@ nav {
 }
 
 .hero-inner {
+  width: 100%;
   max-width: var(--max-w);
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 3rem;
   position: relative;
   z-index: 2;
@@ -288,13 +290,13 @@ nav {
 }
 
 .profile-img {
-  width: 148px;
-  height: 148px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 10%;
-  border: 2.5px solid rgba(255,255,255,0.8);
-  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  object-position: center 15%;
+  border: 3px solid rgba(255,255,255,0.85);
+  box-shadow: 0 6px 32px rgba(0,0,0,0.28);
   flex-shrink: 0;
 }
 
