@@ -1131,6 +1131,12 @@ nav {
   z-index: 1;
 }
 
+.page-header-text-right {
+  margin-left: auto;
+  margin-right: 0;
+  max-width: 420px;
+}
+
 .page-header-photo h1 { color: #ffffff; }
 
 .page-header-photo p {
