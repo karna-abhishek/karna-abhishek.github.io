@@ -199,8 +199,8 @@ nav {
   position: absolute;
   inset: 0;
   background-image: url('/photos/1.jpg');
-  background-size: 155%;
-  background-position: 18% 35%;
+  background-size: cover;
+  background-position: center 35%;
   z-index: 0;
 }
 
@@ -214,12 +214,13 @@ nav {
 
 .hero-inner {
   width: 100%;
-  max-width: var(--max-w);
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 0;
   position: relative;
   z-index: 2;
 }
@@ -1173,7 +1174,7 @@ nav {
 .page-header-video {
   position: relative;
   overflow: hidden;
-  min-height: 420px;
+  min-height: 520px;
   display: flex;
   align-items: flex-end;
   padding: 0 0 3.5rem;
