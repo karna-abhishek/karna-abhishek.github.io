@@ -56,5 +56,5 @@ __MACOSX/
 resume/
 
 # Raw photos (not for web)
-photos/
+/photos/
 "Elsewhere Video.MP4"

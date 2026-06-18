@@ -198,9 +198,9 @@ nav {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('/photos/1.jpg');
+  background-image: url('/photos/1-wide.jpg');
   background-size: cover;
-  background-position: center 35%;
+  background-position: 0% center;
   z-index: 0;
 }
 
@@ -1127,9 +1127,14 @@ nav {
   z-index: 0;
 }
 
-.page-header-photo .container {
+.page-header-photo .container,
+.page-header-video .container {
   position: relative;
   z-index: 1;
+  margin-left: auto;
+  margin-right: 0;
+  max-width: 480px;
+  text-align: left;
 }
 
 .page-header-text-right {
