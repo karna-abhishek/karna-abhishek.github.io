@@ -200,7 +200,7 @@ nav {
   inset: 0;
   background-image: url('/photos/1.jpg');
   background-size: cover;
-  background-position: 35% 35%;
+  background-position: center 35%;
   z-index: 0;
 }
 
@@ -218,14 +218,14 @@ nav {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
+  gap: 3rem;
   position: relative;
   z-index: 2;
 }
 
 .hero-text {
-  max-width: 420px;
-  text-align: left;
+  flex: 1;
 }
 
 .hero-text { flex: 1; }
