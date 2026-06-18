@@ -199,8 +199,8 @@ nav {
   position: absolute;
   inset: 0;
   background-image: url('/photos/1.jpg');
-  background-size: cover;
-  background-position: center 35%;
+  background-size: 115%;
+  background-position: 0% 35%;
   z-index: 0;
 }
 
@@ -219,7 +219,7 @@ nav {
   padding: 0 3rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 0;
   position: relative;
   z-index: 2;
@@ -1142,6 +1142,7 @@ nav {
 
 .page-header-photo p {
   color: rgba(255, 255, 255, 0.7);
+  margin-top: 0.6rem;
 }
 
 .page-header-photo .btn {
