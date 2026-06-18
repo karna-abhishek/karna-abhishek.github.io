@@ -197,7 +197,7 @@ nav {
   inset: 0;
   background-image: url('/photos/1.jpg');
   background-size: cover;
-  background-position: center 25%;
+  background-position: center top;
   z-index: 0;
 }
 
