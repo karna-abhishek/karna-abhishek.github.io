@@ -200,7 +200,7 @@ nav {
   inset: 0;
   background-image: url('/photos/1.jpg');
   background-size: cover;
-  background-position: center 10%;
+  background-position: 60% 35%;
   z-index: 0;
 }
 
@@ -1133,6 +1133,55 @@ nav {
   border-color: rgba(255,255,255,0.88);
   color: var(--navy);
 }
+
+/* ============================================
+   VIDEO BACKGROUND (elsewhere page)
+   ============================================ */
+.page-header-video {
+  position: relative;
+  overflow: hidden;
+  min-height: 420px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 3.5rem;
+  border-bottom: none;
+}
+
+.video-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background: #080c14;
+}
+
+.video-bg iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 56.25vw;
+  min-height: 420px;
+  min-width: calc(420px * 16 / 9);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  border: none;
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 32, 64, 0.50);
+  z-index: 1;
+}
+
+.page-header-video .container {
+  position: relative;
+  z-index: 2;
+}
+
+.page-header-video h1 { color: #ffffff; }
+.page-header-video p  { color: rgba(255,255,255,0.70); }
 
 /* ============================================
    FOOTER
