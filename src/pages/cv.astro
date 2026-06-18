@@ -4,7 +4,7 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="CV" active="CV" description="Curriculum Vitae — Abhishek Karna">
 
-  <section class="page-header">
+  <section class="page-header page-header-photo" style="background-image: url('/photos/3.jpg')">
     <div class="container">
       <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1rem;">
         <div>
@@ -35,17 +35,14 @@ import Layout from '../layouts/Layout.astro';
           <p class="cv-body" style="color: var(--text-light); font-style: italic;">Princeton, New Jersey</p>
         </div>
 
-        <div class="cv-item cv-item-with-photo">
-          <div class="cv-item-body">
-            <div class="cv-item-header">
-              <h3>Duke University</h3>
-              <span class="cv-date">Aug 2022 &ndash; May 2026</span>
-            </div>
-            <p class="cv-subtitle">BS Physics and Mathematics</p>
-            <p class="cv-subtitle">Certificate in Philosophy, Politics, and Economics (PPE)</p>
-            <p class="cv-body" style="color: var(--text-light); font-style: italic;">Durham, North Carolina</p>
+        <div class="cv-item">
+          <div class="cv-item-header">
+            <h3>Duke University</h3>
+            <span class="cv-date">Aug 2022 &ndash; May 2026</span>
           </div>
-          <img src="/photos/3.jpg" alt="Duke graduation" class="cv-photo" />
+          <p class="cv-subtitle">BS Physics and Mathematics</p>
+          <p class="cv-subtitle">Certificate in Philosophy, Politics, and Economics (PPE)</p>
+          <p class="cv-body" style="color: var(--text-light); font-style: italic;">Durham, North Carolina</p>
         </div>
       </div>
 
@@ -183,33 +180,6 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </div>
 
-      <!-- Coursework -->
-      <div class="cv-block">
-        <h2 class="cv-block-title"><i class="fas fa-book"></i> Selected Coursework</h2>
-        <div class="coursework-grid">
-          <div class="course-col">
-            <h4>Physics</h4>
-            <ul>
-              <li>Quantum Mechanics I &amp; II</li>
-              <li>Quantum Lattice Monte Carlo</li>
-              <li>Frustrated Quantum Spin Systems</li>
-              <li>Quantum Materials I &amp; II</li>
-              <li>Novel Quantum Magnets I &amp; II</li>
-              <li>General Relativity</li>
-            </ul>
-          </div>
-          <div class="course-col">
-            <h4>Mathematics</h4>
-            <ul>
-              <li>Representation Theory</li>
-              <li>Complex Analysis</li>
-              <li>Real Analysis</li>
-              <li>Differential Geometry</li>
-              <li>Algebraic Structures I</li>
-            </ul>
-          </div>
-        </div>
-      </div>
 
     </div>
   </section>
