@@ -326,6 +326,16 @@ nav {
   line-height: 1.9;
   max-width: 680px;
 }
+.about-section p a {
+  color: var(--navy);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(15, 40, 80, 0.35);
+}
+.about-section p a:hover {
+  color: var(--navy-light);
+  text-decoration-color: var(--navy-light);
+}
 
 /* ============================================
    FEATURED PUBLICATION
