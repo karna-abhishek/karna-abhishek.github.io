@@ -51,3 +51,10 @@ build/
 
 # macOS
 __MACOSX/
+
+# Overleaf resume (separate git repo)
+resume/
+
+# Raw photos (not for web)
+photos/
+"Elsewhere Video.MP4"
