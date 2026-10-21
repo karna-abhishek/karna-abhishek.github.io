@@ -11,7 +11,7 @@ const blogPosts: {
   coming_soon?: boolean;
 }[] = [
   {
-    title: "Why the Sign Problem is Hard (and Why We Try Anyway)",
+    title: "Why the Sign Problem Is Hard",
     date: "Forthcoming",
     description: "An informal look at the sign problem in quantum Monte Carlo and the strategies used to work around it.",
     coming_soon: true,
@@ -60,7 +60,7 @@ const notes: {
   <section class="page-header page-header-photo" style="background-image: url('/photos/2.jpg'); background-position: 78% 80%;">
     <div class="container">
       <h1>Physics</h1>
-      <p>Tidbits about my professional work and perspectives</p>
+      <p>Research, blog posts, and notes</p>
     </div>
   </section>
 
@@ -76,7 +76,7 @@ const notes: {
             <h3>Physics-Informed ML for Quantum Magnets</h3>
             <span class="hub-tag">Current</span>
           </div>
-          <p>Predicting high-T&#x2093; superconductors, universal electron-phonon coupling, and magnetic transition temperatures using physics-informed machine learning.</p>
+          <p>Predicting high-T<sub>c</sub> superconductors, universal electron-phonon coupling, and magnetic transition temperatures using physics-informed machine learning.</p>
         </a>
 
         <a href="#pdms" class="hub-research-item">
@@ -120,7 +120,7 @@ const notes: {
   <section class="physics-hub-section alt">
     <div class="container">
       <span class="eyebrow">Blog</span>
-      <p class="hub-section-desc">Short posts on quantum condensed matter, numerical methods, and ideas I find worth thinking about.</p>
+      <p class="hub-section-desc">Short posts on quantum condensed matter and numerical methods.</p>
 
       <ul class="hub-list">
         {blogPosts.map(post => (
@@ -145,7 +145,7 @@ const notes: {
   <section class="physics-hub-section">
     <div class="container">
       <span class="eyebrow">Notes</span>
-      <p class="hub-section-desc">Lecture notes and expository PDFs on topics I have worked through carefully enough to write down.</p>
+      <p class="hub-section-desc">Lecture notes and expository write-ups.</p>
 
       <ul class="hub-list">
         {notes.map(note => (
@@ -180,7 +180,7 @@ const notes: {
       <div class="research-body">
         <p>
           My current research develops physics-informed machine learning methods for quantum magnetic materials.
-          The three main threads are: predicting <span class="brush">high-T&#x2093; superconductors</span> from material descriptors;
+          The three main threads are: predicting <span class="brush">high-T<sub>c</sub> superconductors</span> from material descriptors;
           building a universal electron-phonon coupling calculator; and large-scale screening for materials
           with high Curie and Néel temperatures.
         </p>
@@ -210,7 +210,7 @@ const notes: {
           within a carefully chosen projection subspace while maintaining ergodicity and detailed balance,
           achieving rapid convergence in sign-free systems and yielding spectral information even in the
           presence of sign problems. Applied to the Shastry–Sutherland model and the 1D Transverse Field
-          Ising Model near the E&#8328; critical point. First-author paper under review at <em>Physical Review D</em>.
+          Ising Model near the E&#8328; critical point. First-author paper published in <em>Physical Review D</em>, 2026.
         </p>
       </div>
       <div class="research-links">
