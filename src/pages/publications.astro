@@ -2,74 +2,58 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Publications" active="Publications" description="Publications and manuscripts by Abhishek Karna">
+<Layout title="Publications" active="Publications" description="Publications and talks of Abhishek Karna.">
 
-  <section class="page-header page-header-photo" style="background-image: url('/photos/publications.jpg'); background-position: center 10%;">
-    <div class="container">
-      <h1>Publications</h1>
-      <p>Manuscripts and research papers</p>
-    </div>
-  </section>
+  <h1>Publications</h1>
 
-  <section class="publications-section">
-    <div class="container">
-      <ul class="pub-list">
+  <h2>Papers</h2>
+  <ul class="entries">
+    <li>
+      <div class="entry-title">Projected density matrix sampling for lattice Hamiltonians</div>
+      <div class="entry-meta">A. Karna, H. S. Wu, S. Chandrasekharan, R. K. Kaul. <em>Physical Review D</em> 113, 074511 (2026).</div>
+      <div class="entry-links">
+        <a href="https://journals.aps.org/prd/abstract/10.1103/gtbl-vsdt" target="_blank" rel="noopener noreferrer">Journal</a>
+        <a href="https://arxiv.org/abs/2511.19209" target="_blank" rel="noopener noreferrer">arXiv</a>
+      </div>
+    </li>
+    <li>
+      <div class="entry-title">Investigation of the cross-border movement of PM<sub>2.5</sub> in the Terai Belt of Nepal using a low-cost sensor network</div>
+      <div class="entry-meta">H. Shrestha*, A. Karna*, B. de Foy, P. V. Bhave, R. P. Sapkota, R. M. Byanju, M. H. Bergin, B. McAdoo. <em>Atmospheric Pollution Research</em> 17, 102920 (2026). *Equal contribution.</div>
+      <div class="entry-links">
+        <a href="https://doi.org/10.1016/j.apr.2026.102920" target="_blank" rel="noopener noreferrer">Journal</a>
+      </div>
+    </li>
+  </ul>
 
-        <li class="pub-item pub-item-row">
-          <div class="pub-item-content">
-            <span class="pub-type-tag">Published</span>
-            <p class="pub-item-title">Projected Density Matrix Sampling for Lattice Hamiltonians</p>
-            <p class="pub-item-authors">
-              <strong>Karna, A.</strong>, Wu, H. S., Chandrasekharan, S., and Kaul, R. K.
-            </p>
-            <p class="pub-item-venue"><em>Physical Review D</em> 113, 074511 (2026)</p>
-            <div style="margin-top: 0.65rem; display: flex; gap: 0.6rem; flex-wrap: wrap;">
-              <a href="https://journals.aps.org/prd/abstract/10.1103/gtbl-vsdt" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                <i class="fas fa-external-link-alt"></i> Physical Review D
-              </a>
-              <a href="https://arxiv.org/abs/2511.19209" target="_blank" rel="noopener noreferrer" class="btn">
-                <i class="fas fa-file-alt"></i> arXiv
-              </a>
-            </div>
-          </div>
-          <img src="/photos/QMC.jpg" alt="QMC figure" class="pub-item-photo" />
-        </li>
+  <h2>Thesis</h2>
+  <ul class="entries">
+    <li>
+      <div class="entry-title">Theoretical and experimental investigations of novel quantum magnets</div>
+      <div class="entry-meta">Honors thesis, Duke University (2026).</div>
+    </li>
+  </ul>
 
-        <li class="pub-item pub-item-row">
-          <div class="pub-item-content">
-            <span class="pub-type-tag">Thesis — Defense Passed</span>
-            <p class="pub-item-title">Theoretical and Experimental Investigations of Novel Quantum Magnets</p>
-            <p class="pub-item-authors"><strong>Karna, A.</strong> (2026)</p>
-            <p class="pub-item-venue"><em>Duke University Honors Thesis</em></p>
-            <p class="pub-item-note">Defense passed. Deposit pending release of unpublished experimental results.</p>
-          </div>
-          <img src="/photos/Thesis.jpg" alt="Thesis figure" class="pub-item-photo" />
-        </li>
-
-        <li class="pub-item pub-item-row">
-          <div class="pub-item-content">
-            <span class="pub-type-tag">Published</span>
-            <p class="pub-item-title">
-              Investigation of the cross-border movement of PM<sub>2.5</sub> in the Terai Belt of Nepal
-              using a low-cost sensor network
-            </p>
-            <p class="pub-item-authors">
-              Shrestha, H.*, <strong>Karna, A.*</strong>, de Foy, B., Bhave, P. V., Sapkota, R. P.,
-              Byanju, R. M., Bergin, M. H., &amp; McAdoo, B.
-            </p>
-            <p class="pub-item-venue"><em>Atmospheric Pollution Research</em>, Elsevier (2026)</p>
-            <p class="pub-item-note">* Co-first author</p>
-            <div style="margin-top: 0.65rem;">
-              <a href="https://doi.org/10.1016/j.apr.2026.102920" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                <i class="fas fa-external-link-alt"></i> View Article
-              </a>
-            </div>
-          </div>
-          <img src="/photos/Air_Pollution.jpg" alt="Air pollution figure" class="pub-item-photo" />
-        </li>
-
-      </ul>
-    </div>
-  </section>
+  <h2 id="talks">Talks and posters</h2>
+  <ul class="entries">
+    <li>
+      <div class="entry-title">Projected thermal density matrix Monte Carlo on the Shastry&ndash;Sutherland model</div>
+      <div class="entry-meta">APS Global Physics Summit, Denver, March 2026.</div>
+    </li>
+    <li>
+      <div class="entry-title">Projected density matrix sampling for lattice Hamiltonians</div>
+      <div class="entry-meta">Max Planck Graduate Center for Quantum Materials, selection symposium, February 2026.</div>
+      <div class="entry-links"><a href="/pdms-presentation.pdf" target="_blank">Slides</a></div>
+    </li>
+    <li>
+      <div class="entry-title">Low-energy spectrum of the Shastry&ndash;Sutherland model on small lattices using a new Monte Carlo</div>
+      <div class="entry-meta">International Conference on Strongly Correlated Quantum Materials, Hvar, October 2025.</div>
+      <div class="entry-links"><a href="/projects/Hvar2025 - ICSCQM Poster - Karna, Abhishek.pdf" target="_blank">Poster</a></div>
+    </li>
+    <li>
+      <div class="entry-title">Synthesis, single-crystal growth and characterization of NdFeO<sub>3</sub></div>
+      <div class="entry-meta">APS Global Physics Summit, Anaheim, March 2025.</div>
+      <div class="entry-links"><a href="/projects/APS Global Physics Summit - Karna, Abhishek - 2025.pdf" target="_blank">Poster</a></div>
+    </li>
+  </ul>
 
 </Layout>

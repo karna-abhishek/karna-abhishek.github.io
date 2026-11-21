@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// Add an entry when a piece is ready, e.g.
+// { title: '...', date: 'March 2027', href: '/essays/slug.pdf' }
+// PDFs go in public/essays/ or public/blog/.
+const essays: { title: string; date: string; href: string }[] = [];
+const posts: { title: string; date: string; href: string }[] = [];
+---
+
+<Layout title="Writing" active="Writing" description="Essays and physics writing by Abhishek Karna.">
+
+  <h1>Writing</h1>
+
+  <h2 id="essays">Essays</h2>
+  {essays.length ? (
+    <ul class="entries">
+      {essays.map(e => (
+        <li><a href={e.href} class="entry-title">{e.title}</a><div class="entry-meta">{e.date}</div></li>
+      ))}
+    </ul>
+  ) : <p class="note">Forthcoming.</p>}
+
+  <h2 id="blog">Physics</h2>
+  {posts.length ? (
+    <ul class="entries">
+      {posts.map(p => (
+        <li><a href={p.href} class="entry-title">{p.title}</a><div class="entry-meta">{p.date}</div></li>
+      ))}
+    </ul>
+  ) : <p class="note">Forthcoming.</p>}
+
+</Layout>

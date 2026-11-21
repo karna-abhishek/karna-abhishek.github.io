@@ -2,83 +2,53 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Home" active="Home">
+<Layout title="Home">
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-inner">
-      <div class="hero-text">
-        <h1 class="hero-name">Abhishek Karna</h1>
-        <p class="hero-role">PhD Student in Theoretical Physics</p>
-        <p class="hero-affil">Princeton University</p>
-        <nav class="hero-links">
-          <a href="mailto:akarna.work@gmail.com">
-            <i class="fas fa-envelope"></i> Email
-          </a>
-          <span class="sep">/</span>
-          <a href="https://www.linkedin.com/in/abhishekkarna/" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
-          <span class="sep">/</span>
-          <a href="https://scholar.google.com/citations?user=fF3vhcEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-graduation-cap"></i> Scholar
-          </a>
-          <span class="sep">/</span>
-          <a href="/resume.pdf" target="_blank">
-            <i class="fas fa-file-pdf"></i> CV
-          </a>
-        </nav>
-      </div>
-    </div>
-  </section>
+  <section class="intro">
+    <div>
+      <h1>Abhishek Karna</h1>
+      <p class="role">PhD student in physics, Princeton University</p>
 
-  <!-- About -->
-  <section class="about-section">
-    <div class="container">
-      <span class="eyebrow">About</span>
+      <!-- Introduction: replace with your own text. -->
       <p>
-        I'm a <span class="brush">PhD student in Theoretical Physics at Princeton</span>, working on quantum
-        condensed matter physics. My current research applies machine learning to quantum materials. I use it to
-        classify, predict, and screen for properties that are hard to compute from first principles alone.
+        I work on machine learning for quantum materials with
+        <a href="https://bernevig-group.github.io" target="_blank" rel="noopener noreferrer">B. Andrei Bernevig</a>,
+        in collaboration with Leslie Schoop's group in the Department of Chemistry.
       </p>
       <p>
-        Before Princeton, I spent four years at Duke working across several areas: building new <span class="brush"><a href="https://journals.aps.org/prd/abstract/10.1103/gtbl-vsdt" target="_blank" rel="noopener noreferrer">Quantum
-        Monte Carlo algorithms for quantum spin systems</a></span>, growing <a href="/projects/APS Global Physics Summit - Karna, Abhishek - 2025.pdf" target="_blank">single crystals in a furnace</a>, and modeling
-        <a href="https://doi.org/10.1016/j.apr.2026.102920" target="_blank" rel="noopener noreferrer">pollution in the Indo-Gangetic region</a>. I graduated with a Bachelor of Science in Physics, a Bachelor of Science
-        in Mathematics, and a Certificate in <a href="https://dukeppe.trinity.duke.edu/" target="_blank" rel="noopener noreferrer">Philosophy, Politics, and Economics (PPE)</a>. I also wrote a <a href="/projects/MycoPoetica - Karna, Abhishek - 2022.pdf" target="_blank">poetry
-        collection about fungi</a> and documented <a href="https://duke.is/m/nax2" target="_blank" rel="noopener noreferrer">temples across South Asia and Southeast Asia</a>.
+        Before Princeton I studied physics and mathematics at Duke University, with a certificate in
+        philosophy, politics and economics. At Duke I developed a quantum Monte Carlo method for lattice
+        Hamiltonians with Shailesh Chandrasekharan, and synthesized and grew crystals of quantum magnets in
+        Sara Haravifard's lab.
+      </p>
+
+      <p class="links">
+        <a href="mailto:akarna.work@gmail.com">Email</a>
+        <a href="https://scholar.google.com/citations?user=fF3vhcEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/abhishekkarna/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="/resume.pdf" target="_blank">CV</a>
       </p>
     </div>
+    <img src="/photos/1.jpg" alt="Abhishek Karna" class="intro-photo" />
   </section>
 
-  <!-- Featured Publication -->
-  <section class="featured-section">
-    <div class="container">
-      <span class="eyebrow">Featured Publication</span>
-      <div class="pub-featured-card">
-        <span class="pub-status-tag">Published &mdash; Physical Review D 113, 074511 (2026)</span>
-        <h3>Projected Density Matrix Sampling for Lattice Hamiltonians</h3>
-        <p class="pub-authors">
-          <strong>Abhishek Karna</strong>, Hansen S. Wu, Shailesh Chandrasekharan, Ribhu K. Kaul
-        </p>
-        <p class="pub-meta-line">arXiv:2511.19209 &nbsp;&middot;&nbsp; April 2026</p>
-        <p class="pub-abstract">
-          We present a continuous-time path-integral Monte Carlo method for computing the low-lying spectrum of
-          generic quantum Hamiltonians within a projection subspace. The method is free of Trotter discretization
-          errors and converges systematically to low-energy states with finite overlap with the projection subspace
-          as &beta; increases. Applied to the 1D Ising model near the E&#8328; critical point and the frustrated
-          Shastry&ndash;Sutherland model, demonstrating quantum Monte Carlo spectroscopy for lattice Hamiltonians.
-        </p>
-        <div class="pub-action-links">
-          <a href="https://journals.aps.org/prd/abstract/10.1103/gtbl-vsdt" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-            <i class="fas fa-external-link-alt"></i> Physical Review D
-          </a>
-          <a href="https://arxiv.org/abs/2511.19209" target="_blank" rel="noopener noreferrer" class="btn">
-            <i class="fas fa-file-alt"></i> arXiv
-          </a>
-        </div>
+  <h2>Selected publications</h2>
+  <ul class="entries">
+    <li>
+      <div class="entry-title">Projected density matrix sampling for lattice Hamiltonians</div>
+      <div class="entry-meta">A. Karna, H. S. Wu, S. Chandrasekharan, R. K. Kaul. <em>Physical Review D</em> 113, 074511 (2026).</div>
+      <div class="entry-links">
+        <a href="https://journals.aps.org/prd/abstract/10.1103/gtbl-vsdt" target="_blank" rel="noopener noreferrer">Journal</a>
+        <a href="https://arxiv.org/abs/2511.19209" target="_blank" rel="noopener noreferrer">arXiv</a>
       </div>
-    </div>
-  </section>
+    </li>
+    <li>
+      <div class="entry-title">Investigation of the cross-border movement of PM<sub>2.5</sub> in the Terai Belt of Nepal using a low-cost sensor network</div>
+      <div class="entry-meta">H. Shrestha*, A. Karna*, et al. <em>Atmospheric Pollution Research</em> 17, 102920 (2026). *Equal contribution.</div>
+      <div class="entry-links">
+        <a href="https://doi.org/10.1016/j.apr.2026.102920" target="_blank" rel="noopener noreferrer">Journal</a>
+      </div>
+    </li>
+  </ul>
 
 </Layout>
