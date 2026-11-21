@@ -90,6 +90,8 @@ main { padding: 2.5rem 0 3.5rem; }
 .entries { list-style: none; }
 .entries li { margin-bottom: 1.1rem; }
 .entries li:last-child { margin-bottom: 0; }
+.books { list-style: none; }
+.books li { margin-bottom: 0.3rem; }
 .entry-title { font-weight: 600; }
 .entry-meta { color: var(--muted); font-size: 0.92rem; }
 .entry-links { font-family: var(--sans); font-size: 0.8rem; margin-top: 0.15rem; }
